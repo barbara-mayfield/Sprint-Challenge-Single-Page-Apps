@@ -26,7 +26,6 @@ export default function CharacterList(props) {
     {character.map(props => {
         return <CharacterCard 
                       key={props.id}
-                      img={props.img}
                       char={props} 
                       name={props.name}
                       status={props.status}
