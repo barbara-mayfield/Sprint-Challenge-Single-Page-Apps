@@ -7,16 +7,11 @@ export default function CharacterCard(props) {
   return (
     <Card>
       <Image src={props.img} />
-      <h2>Name: {props.name}</h2>
-      <div className="status">
-        Status: <em>{props.status}</em>
-      </div>
-      <div className="species">
-        Species: <em>{props.species}</em>
-      </div>
-      <div className="location">
-        Location: {props.location}
-      </div>
+      <Card.Content>
+        <Card.Header>Name: {props.name}</Card.Header>
+        <Card.Meta>Species: {props.species}</Card.Meta>
+        <Card.Description>Location: {props.location}</Card.Description>
+      </Card.Content>
     </Card>
   )
 }
